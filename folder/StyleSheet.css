@@ -1,0 +1,553 @@
+﻿aside {
+    flex-grow: 1;
+    border: solid 1px black;
+    margin: 0.5%;
+}
+
+    aside button {
+        width: 70%;
+        height: 10%;
+        margin-right: 14%;
+        margin-left: 14%;
+        margin-top: 5%;
+        border: solid 2px black;
+        background-color: transparent;
+        font-size: 1.5vw;
+    }
+
+    article button {
+        width: 40%;
+        height: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 1%;
+        border: solid 3px black;
+        font-size: 1.3vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+body {
+    background-image: url('rec1.png');
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 98%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.7vh;
+}
+
+button {
+    background-color: transparent;
+    font-size: 90%;
+}
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+header {
+    font-size: 0.8rem;
+    height: 14%;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+nav {
+    direction: rtl;
+    border-left: 3.5px solid white;
+    border-right: 3.5px solid white;
+    border-bottom: 3.5px solid white;
+    outline: solid;
+    outline-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    opacity: 0.8;
+    position: fixed;
+    height: 50vh;
+    width: 50vh;
+    transition: 0.5s;
+    overflow-y: hidden;
+    right: 5vh;
+    top: -52vh;
+    z-index: 8;
+    color: #f00;
+    font-size: 3vh;
+}
+
+    nav:hover {
+        outline-color: black;
+    }
+
+section {
+    margin-top: 2%;
+    height: 80%;
+    align-self: baseline;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 99%;
+    width: 98%;
+    padding: 0;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+}
+
+    .login-box form {
+        height: 99%;
+        width: 98%;
+    }
+
+    .login-box h2 {
+        margin: 0 0 0.5vh;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 6vh;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+        .login-box .user-box input {
+            width: 100%;
+            font-size: 4vh;
+            color: #fff;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            right: 0;
+            font-size: 3vh;
+            color: #f00;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+    .login-box form button {
+        top: 6vh;
+        right: 60%;
+    }
+
+    .buttons, .login-box form button, .arti1 {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 3vh;
+    }
+    .buttons,.login-box form button{
+        color: red;
+        letter-spacing: 4px;
+
+    }
+
+        .buttons:hover,
+        .login-box button:hover {
+            background: red;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red;
+        }
+
+        .buttons:active,.but:active {
+            transform: translateY(4px);
+        }
+
+        .buttons span,
+        .login-box button span,
+        .arti1 span {
+            position: absolute;
+            display: block;
+        }
+
+            .buttons span:nth-child(1),
+            .login-box button span:nth-child(1),
+            .arti1 span:nth-child(1) {
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, red);
+                animation: btn-anim1 1s linear infinite;
+            }
+
+            .buttons span:nth-child(2),
+            .login-box button span:nth-child(2),
+            .arti1 span:nth-child(2) {
+                top: -100%;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(180deg, transparent, red);
+                animation: btn-anim2 1s linear infinite;
+                animation-delay: .25s
+            }
+
+            .buttons span:nth-child(3),
+            .login-box button span:nth-child(3),
+            .arti1 span:nth-child(3) {
+                bottom: 0;
+                right: -100%;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(270deg, transparent, red);
+                animation: btn-anim3 1s linear infinite;
+                animation-delay: .5s
+            }
+
+            .buttons span:nth-child(4),
+            .login-box button span:nth-child(4),
+            .arti1 span:nth-child(4) {
+                bottom: -100%;
+                left: 0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(360deg, transparent, red);
+                animation: btn-anim4 1s linear infinite;
+                animation-delay: .75s;
+            }
+.arti1 {
+    flex-grow: 2;
+    align-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 97%;
+    border: none;
+    outline: none;
+}
+
+.anisj {
+    height: 20%;
+    width: 10%;
+}
+
+.containTry {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-grow: 3;
+}
+
+.containResult {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    height: 97vh;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    height: 70%;
+    width: 60%;
+    margin: auto;
+}
+
+.containGame {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    align-items: stretch;
+    height: 97vh;
+    margin: auto;
+}
+
+.containerGame2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    height: 88%;
+    width: 97%;
+    margin: auto;
+}
+
+.containDi {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    height: 9%;
+    width: 100%;
+    margin: auto;
+    border-bottom: solid 2.5px black;
+}
+
+.coloirj {
+    background-color: #ffffff;
+    border: solid 2.5px black;
+    height: 98%;
+    width: 19%;
+    margin-left: 4%;
+    margin-bottom: 1.5%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.v {
+    width: 6vw;
+    background-image: url('v.png');
+    background-position: center;
+    background-size: cover;
+    border: none;
+    outline: none;
+}
+
+    .v:active {
+        transform: translateY(4px);
+    }
+
+#bAdd {
+    background-color: red;
+    font-size: 2.5vh;
+}
+
+    #bAdd:hover {
+        opacity: 0.6;
+    }
+
+    #bAdd:active {
+        opacity: unset;
+        transform: translateY(4px);
+    }
+
+#palete {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    align-items: stretch;
+    height: 10%;
+}
+
+    #palete div {
+        border: solid 1px black;
+        width: 10%;
+        height: 87%;
+        margin-right: 1.5%;
+        opacity: 0.7;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 3px #999;
+        text-align: center;
+    }
+
+        #palete div:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+    #palete > div:nth-child(1) {
+        background-color: rgb(243, 10, 153);
+    }
+
+    #palete > div:nth-child(2) {
+        background-color: rgb(0, 38, 255);
+    }
+
+    #palete > div:nth-child(3) {
+        background-color: rgb(153, 11, 202);
+    }
+
+    #palete > div:nth-child(4) {
+        background-color: rgb(255, 106, 0);
+    }
+
+    #palete > div:nth-child(5) {
+        background-color: rgb(255, 250, 0);
+    }
+
+    #palete > div:nth-child(6) {
+        background-color: rgb(0, 255, 33);
+    }
+
+    #palete > div:nth-child(7) {
+        background-color: rgb(255, 0, 0);
+    }
+
+    #palete > div:nth-child(8) {
+        background-color: rgb(0, 169, 255);
+    }
+
+    #palete > div:nth-child(9) {
+        font-size: 2vw;
+        border: solid grey 0.2px;
+    }
+
+#board {
+    flex-grow: 80;
+    border: solid 1px black;
+    margin: 0.5%;
+}
+
+#mess {
+    width: 50%;
+    height: 65%;
+    border: solid 8px red;
+    border-radius: 20%;
+    margin: auto;
+    top: 10%;
+    display: none;
+    font-size: 2vw;
+    position: absolute;
+    left: 22%;
+    z-index: 1;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    background: #f0f0f0;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset, -10px -10px 10px #ffffff inset;
+}
+
+    #mess button {
+        width: 30%;
+        height: 15%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+#messd {
+    height: 90%;
+    width: 97%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: solid 2px black;
+}
+
+#messcon {
+    display: flex;
+    height: 18%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#openBoardMenu {
+    color: black;
+    position: fixed;
+    right: 5vh;
+    top: 0vh;
+    transition: 0.5s;
+    outline: solid;
+    outline-color: red;
+    border-left: 3.5px solid white;
+    border-right: 3.5px solid white;
+    border-bottom: 3.5px solid white;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 2;
+}
+
+@media (max-width: 800px ) {
+    header {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.7rem;
+    }
+
+    article {
+        font-size: 1%;
+    }
+
+    nav {
+        font-size: 60%;
+    }
+
+    .buttons, .login-box form button {
+        font-size: 5px;
+    }
+}
+
+@media (max-height: 700px ) {
+    nav {
+        direction: rtl;
+    }
+
+    .buttons, .login-box form button {
+        letter-spacing: normal;
+    }
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,100% {
+        top: 100%;
+    }
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,100% {
+        right: 100%;
+    }
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,100% {
+        bottom: 100%;
+    }
+}
